@@ -41,8 +41,44 @@ Centripetal force = Gravitational force\\
 $T = 2.36 \times 10^6 $ s\\ 
 \[ T = \frac{2.36 \times 10^6}{3600 \times 24} \]  \\
 $T$ = 27.4 days\\
-\item If a terrestrial observer sees the same face of the Moon all the time, the Moon must be rotating about its own axis at the exact same rate as its orbital motion around the Earth.\\ Hence, rotational period of Moon = 27.4 days. 
-\item 
+
+
+\item If a terrestrial observer sees the same face of the Moon all the time, the Moon must be rotating about its own axis at the exact same rate as its orbital motion around the Earth. (See Fig. \ref{fig:moon_orbit})\\ 
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+%\draw[help lines, color=gray!30, thick] (-4.9,-4.9) grid (4.9,4.9);
+\filldraw [fill=blue!40, very thick] (0,0) circle (0.5cm);
+\node (earth) at (0,-1) {Earth};
+
+\draw [very thick, dashed] (0,0) circle (3cm);
+\filldraw [fill=yellow!40, very thick] (3,0) circle (0.3cm);
+\draw [very thick, red] (3,0) -- (2.7,0);
+\node[anchor = south west] (moon1) at (3,0) {\hspace{4pt} day 0};
+\node[anchor = north west] (moon5) at (3,0) {\hspace{4pt} day 28};
+
+\filldraw [fill=yellow!40, very thick] (0,3) circle (0.3cm);
+\draw [very thick, red] (0,3) -- (0,2.7);
+\node[anchor = south] (moon2) at (0,3.3) {day 7};
+
+\filldraw [fill=yellow!40, very thick] (-3,0) circle (0.3cm);
+\draw [very thick, red] (-3,0) -- (-2.7,0);
+\node[anchor = east] (moon3) at (-3.3,0) {day 14};
+
+\filldraw [fill=yellow!40, very thick] (0,-3) circle (0.3cm);
+\draw [very thick, red] (0,-3) -- (0,-2.7);
+\node[anchor = north] (moon4) at (0,-3.3) {day 21};
+
+\end{tikzpicture}
+\caption{Observer on Earth sees the same face of the Moon at all times}
+\label{fig:moon_orbit}
+\end{figure}
+
+Hence, rotational period of Moon = 27.4 days.\\ 
+
+
+\item The resultant gravitational field at the point is the vectorial sum of the gravitational fields due to the Earth and Moon:
 \begin{figure}[h]
     \centering
 \begin{tikzpicture}
